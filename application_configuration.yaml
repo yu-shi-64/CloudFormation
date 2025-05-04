@@ -1,0 +1,10 @@
+version: 1.0
+name: MyAppFromGit
+resources:
+  - type: cloudformation
+    name: MyStack
+    path: vpc_template.yaml
+    region: ap-northeast-1  # 東京リージョンなど
+    deploy_method: create
+    capabilities:
+      - CAPABILITY_NAMED_IAM
